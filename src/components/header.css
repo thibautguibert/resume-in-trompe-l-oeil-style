@@ -1,0 +1,65 @@
+header{
+    height: 250px;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 70px 10px;
+}
+
+header .profile-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+}
+
+header .profile-container h1{
+    font-family: "Arial";
+    font-weight: 100;
+    margin: 0;
+}
+
+header .subtitle-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .subtitle-container h2{
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 16px;
+    color: var(--wcs);
+    margin: 0;
+}
+
+header figure {
+    font-size: 8px;
+}
+
+header .subtitle-container img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+header .contact-container, .place-container, .email-container, .phone-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .contact-container h3 {
+    font-size: 14px;
+    font-weight: 100;
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+}
+
+header p span {
+    color: var(--wcs);
+}
