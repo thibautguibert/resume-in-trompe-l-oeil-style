@@ -1,31 +1,37 @@
+html{
+  background-color: var(--html-bg-color);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
 body {
-  background-color: #001011;
-  color: #97c8eb;
+  box-sizing: border-box;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  width: 827px;
+  height: 1169px;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  padding: 0;
+  box-shadow: 0px 0px 9px rgba(0,0,0, 0.2);
+  font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
+:root{
+  --html-bg-color: rgba(237, 237, 240, 1);
+  --body-bg-color: white;
+  --text-color: #001011;
+  --wcs: #F65454;
 }
 
-.item {
-  text-align: center;
-  width: fit-content;
+.icon{
+  height: 20px;
+  padding-right: 8px;
+  filter: invert(47%) sepia(88%) saturate(1021%) hue-rotate(325deg) brightness(96%) contrast(101%);
 }
 
-.item > img {
-  max-width: 80vw;
-}
-
-.container::after {
-  content: '';
-  height: 15vh;
+a {
+  text-decoration: none;
 }
