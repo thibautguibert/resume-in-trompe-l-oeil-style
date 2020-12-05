@@ -23,3 +23,9 @@ body {
   --body-bg-color: rgba(237, 237, 240, 1);
   --wcs: #F65454;
 }
+
+.icon{
+  height: 20px;
+  padding-right: 8px;
+  filter: invert(47%) sepia(88%) saturate(1021%) hue-rotate(325deg) brightness(96%) contrast(101%);
+}
