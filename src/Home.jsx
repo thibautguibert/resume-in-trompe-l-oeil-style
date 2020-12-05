@@ -1,10 +1,13 @@
-import React from 'react';
-import Header from './components/Header';
+import React from "react";
+import { ThemeProvider } from "./ThemeContext.tsx";
+import Header from "./components/Header";
 
 function Home() {
   return (
     <main className="container">
-      <Header />
+      <ThemeProvider>
+        <Header />
+      </ThemeProvider>
     </main>
   );
 }

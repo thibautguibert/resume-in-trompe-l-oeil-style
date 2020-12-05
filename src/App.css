@@ -1,5 +1,5 @@
 html{
-  background-color: var(--body-bg-color);
+  background-color: var(--html-bg-color);
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -7,8 +7,8 @@ html{
 
 body {
   box-sizing: border-box;
-  background-color: white;
-  color: #001011;
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
   width: 827px;
   height: 1169px;
   margin: 0;
@@ -20,7 +20,9 @@ body {
 }
 
 :root{
-  --body-bg-color: rgba(237, 237, 240, 1);
+  --html-bg-color: rgba(237, 237, 240, 1);
+  --body-bg-color: white;
+  --text-color: #001011;
   --wcs: #F65454;
 }
 
@@ -28,4 +30,8 @@ body {
   height: 20px;
   padding-right: 8px;
   filter: invert(47%) sepia(88%) saturate(1021%) hue-rotate(325deg) brightness(96%) contrast(101%);
+}
+
+a {
+  text-decoration: none;
 }

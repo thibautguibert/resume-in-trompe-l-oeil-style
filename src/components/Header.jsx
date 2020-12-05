@@ -1,15 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
+import { useTheme } from "../ThemeContext.tsx";
+
+import { shakeAnimation, giveGrayScale, showBang } from "../jsFunctionLibrary";
+
 import "./header.css";
+
 import githubIcon from "../icons/github.svg";
 import linkedInIcon from "../icons/linkedin.svg";
 import twitterIcon from "../icons/twitter.svg";
 import placeIcon from "../icons/pin.svg";
 import emailIcon from "../icons/at-sign.svg";
 import phoneIcon from "../icons/call-phone.svg";
-import profilePic from "../images/photoCVsquare040v4.JPG";
 
 const place = "La Loupe";
 const Header = () => {
+  const { setTheme } = useTheme();
+  const [ko, setKo] = useState(0);
+  const [downgrade, setDowngrade] = useState(100);
+  const changeTheme = (event) => {
+    const eventClass = event.target.className;
+    if (ko < 4) {
+      shakeAnimation(`.${eventClass}`);
+      giveGrayScale(`.${eventClass}`, downgrade === 100 ? "90" : downgrade);
+      setKo(ko + 1);
+      setDowngrade(downgrade - 20);
+      showBang(".profile-pic-container");
+    } else if (ko === 4) {
+      shakeAnimation(`.${eventClass}`);
+      setKo(6);
+      setTheme("dark");
+      giveGrayScale(`.${eventClass}`, "10");
+    }
+  };
   return (
     <header>
       <div className="profile-container">
@@ -18,9 +40,27 @@ const Header = () => {
           <h2>Développeur fullstack React.js & node.js</h2>
           <span>|</span>
           <figure>
-            <img src={linkedInIcon} alt="linkedin icon" className="icon" />
-            <img src={githubIcon} alt="github icon" className="icon" />
-            <img src={twitterIcon} alt="twitter icon" className="icon" />
+            <a
+              href="https://www.linkedin.com/in/thibautguibert/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={linkedInIcon} alt="linkedin icon" className="icon" />
+            </a>
+            <a
+              href="https://github.com/thibautguibert"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={githubIcon} alt="github icon" className="icon" />
+            </a>
+            <a
+              href="https://twitter.com/Thibaut_Guibert"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={twitterIcon} alt="twitter icon" className="icon" />
+            </a>
           </figure>
         </div>
         <div className="contact-container">
@@ -39,7 +79,12 @@ const Header = () => {
         </div>
       </div>
       <figure className="profile-pic-container">
-        <img src={profilePic} alt="profile of Thibaut Guibert" />
+        <button
+          type="button"
+          aria-label="clickable button for easter egg"
+          className="profile-pic-btn"
+          onClick={changeTheme}
+        />
       </figure>
       <p>
         Disponible à partir du <span>15 février</span> pour un{" "}

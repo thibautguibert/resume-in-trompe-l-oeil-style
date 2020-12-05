@@ -4,6 +4,7 @@ This project is meant to look like a standard resume in pdf, but it's actually f
 
 Completion status:
 - github created
+- pdf format and header created
 
 List of hints to find the 5 easter eggs:
 -
