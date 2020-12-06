@@ -1,11 +1,9 @@
 header{
     height: 200px;
     max-width: 100%;
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: start;
     padding: 40px 70px 10px;
 }
 
