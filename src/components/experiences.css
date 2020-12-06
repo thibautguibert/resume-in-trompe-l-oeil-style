@@ -14,7 +14,8 @@
 }
 
 .experiences-container .bold-hr {
-    border: var(--text-color) solid 1px;
+    border: none;
+    border-top: var(--text-color) solid 2px;
     margin: 3px 0;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .experiences-container h3 {
-    font-size: 14px;
+    font-size: 14.5px;
     font-weight: bold;
     padding-bottom: 2px;
 }
@@ -44,18 +45,54 @@
 }
 
 
-.experiences-container p span {
+.experiences-container p span, h4 span {
     font-style: italic;
 }
 
 .experiences-container p .arrow {
     display: inline-block;
-    padding: 3px 5px 3px 0;
+    padding: 2px 5px 0px 0;
     font-style: normal;
 }
+
+.experiences-container p .highlight {
+    color: var(--wcs);
+}
+
+
+.experiences-container p .brackets {
+    font-size: 12px;
+    font-style: normal;
+}
+
 
 .experiences-container .light-hr {
     border: none;
     border-top: var(--html-bg-color) dotted 3px;
-    margin: 8px 1px;
+    margin: 6px 3px;
 }
+
+.experiences-container h4 {
+    color: var(--wcs);
+    font-size: 14px;
+}
+
+.experiences-container .spacetime-container {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    padding: 3px;
+}
+
+.experiences-container .spacetime-container div {
+    display: flex;
+}
+
+.experiences-container .spacetime-container .icon {
+    height: 13.5px;
+}
+
+.experiences-container .spacetime-container p {
+    font-size: 11px;
+}
+
