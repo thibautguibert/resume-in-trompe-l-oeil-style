@@ -9,7 +9,7 @@ const themeColours = {
     dark: {
         color: "whitesmoke",
         backgroundColor: "#3f3f3f",
-        altColor: "#F65454"
+        altColor: "#ad707f"
     },
     ol: {
         color: "#3E00BA",

@@ -29,6 +29,11 @@ const Header = () => {
       shakeAnimation(`.${eventClass}`);
       setKo(6);
       setTheme("dark");
+      const icons = document.querySelectorAll(".icon");
+      for (let i = 0; i < icons.length; i += 1) {
+        icons[i].style.filter =
+          "invert(54%) sepia(15%) saturate(950%) hue-rotate(295deg) brightness(89%) contrast(85%)";
+      }
       giveGrayScale(`.${eventClass}`, "10");
     }
   };

@@ -78,6 +78,7 @@ header .profile-pic-container .bang {
 
 header .profile-pic-container .profile-pic-btn {
     border: none;
+    outline: none;
     padding: 0;
     height: 120px;
     width: 120px;
