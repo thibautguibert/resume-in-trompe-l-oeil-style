@@ -1,11 +1,9 @@
 header{
     height: 200px;
     max-width: 100%;
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: start;
     padding: 40px 70px 10px;
 }
 
@@ -78,6 +76,7 @@ header .profile-pic-container .bang {
 
 header .profile-pic-container .profile-pic-btn {
     border: none;
+    outline: none;
     padding: 0;
     height: 120px;
     width: 120px;

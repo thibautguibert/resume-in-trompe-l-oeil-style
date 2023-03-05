@@ -1,3 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html{
   background-color: var(--html-bg-color);
   display: flex;
@@ -6,7 +12,6 @@ html{
 }
 
 body {
-  box-sizing: border-box;
   background-color: var(--body-bg-color);
   color: var(--text-color);
   width: 827px;
@@ -29,8 +34,7 @@ body {
 .icon{
   height: 20px;
   padding-right: 8px;
-  filter: invert(47%) sepia(88%) saturate(1021%) hue-rotate(325deg) brightness(96%) contrast(101%);
-}
+  filter: invert(40%) sepia(12%) saturate(3655%) hue-rotate(318deg) brightness(116%) contrast(94%);}
 
 a {
   text-decoration: none;
