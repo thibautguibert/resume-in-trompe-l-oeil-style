@@ -20,7 +20,7 @@ const Experiences = () => {
       </p>
       <p>
         <span className="arrow">➢</span>Hackathon{" "}
-        <span> Back To The Future</span>: prix “Coup de cœur du Jury” avec une
+        <span> Back To The Future</span> : prix “Coup de cœur du Jury” avec une
         application React mobile de navigation routière.{" "}
       </p>
       <p>
@@ -80,6 +80,98 @@ const Experiences = () => {
         </span>
       </p>
       <hr className="light-hr" />
+
+      <h3>Startup Manager</h3>
+      <h4>Studio, fonds VC de Sia Partners</h4>
+      <div className="spacetime-container">
+        <div>
+          <img src={calendarIcon} alt="calendar" className="icon" />
+          <p>Sep 2018 – Fev 2019</p>
+        </div>
+        <div>
+          <img src={placeIcon} alt="place" className="icon" />
+          <p>Paris</p>
+        </div>
+      </div>
+      <p>
+        <span className="arrow">➢</span>Marketing digital : mise en place de
+        newsletters (Mailchimp) et de l’acquisition de nouveaux utilisateurs
+      </p>
+      <p>
+        <span className="arrow">➢</span>Optimisation du SEO (Ubersuggest,
+        Similarweb) et création de landing page
+        <span className="highlight">→ taux de conversion de la page +250%</span>
+      </p>
+      <p>
+        <span className="arrow">➢</span>Organisation du concours startup
+        APIficator dans plusieurs pays. Création du site (Wix), sourcing de
+        candidats et suivi du projet
+      </p>
+      <hr className="light-hr" />
+
+      <h2>
+        <span>❖</span>Marketing
+      </h2>
+      <h3>Analyste Marketing</h3>
+      <h4>Orange Group, Consumer Marketing</h4>
+      <div className="spacetime-container">
+        <div>
+          <img src={calendarIcon} alt="calendar" className="icon" />
+          <p>Mai 2017 – Aout 2017</p>
+        </div>
+        <div>
+          <img src={placeIcon} alt="place" className="icon" />
+          <p>Londres</p>
+        </div>
+      </div>
+      <p>
+        <span className="arrow">➢</span>Conseil interne en propositions de
+        valeur et pricing
+      </p>
+      <hr className="light-hr" />
+
+      <h3>Analyste Branding</h3>
+      <h4>
+        Ubisoft Paris Studio, <span>Lapins Crétins</span>
+      </h4>
+      <div className="spacetime-container">
+        <div>
+          <img src={calendarIcon} alt="calendar" className="icon" />
+          <p>Sep 2016 – Fev 2017</p>
+        </div>
+        <div>
+          <img src={placeIcon} alt="place" className="icon" />
+          <p>Paris</p>
+        </div>
+      </div>
+      <p>
+        <span className="arrow">➢</span>Refonte de la stratégie de marque{" "}
+        <span>Lapins Crétins</span>
+      </p>
+      <p>
+        <span className="arrow">➢</span>Marketing produit sur les jeux mobiles{" "}
+        <span>Lapins Crétins</span> (études de marché, métadonnées pour les
+        stores, présentations internes)
+      </p>
+      <hr className="light-hr" />
+
+      <h3>Digital Marketing Manager</h3>
+      <h4>Filoute (cours.filoute.com), incubée au NUMA</h4>
+      <div className="spacetime-container">
+        <div>
+          <img src={calendarIcon} alt="calendar" className="icon" />
+          <p>Juil 2015 – Aout 2015</p>
+        </div>
+        <div>
+          <img src={placeIcon} alt="place" className="icon" />
+          <p>Paris</p>
+        </div>
+      </div>
+      <p>
+        <span className="arrow">➢</span>Growth hacks sur les réseaux sociaux et
+        création de contenu adaptée au SEO
+        <span className="highlight">→ nouveaux followers journaliers x4</span>
+      </p>
     </div>
   );
 };
